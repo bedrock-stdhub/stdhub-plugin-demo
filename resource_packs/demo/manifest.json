@@ -1,0 +1,40 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "demo-RP",
+    "description": "Resource pack for plugin demo",
+    "uuid": "85ce3b42-056f-4e7c-9345-e74256825a70",
+    "version": [
+      0,
+      1,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Resource Pack",
+      "type": "resources",
+      "uuid": "edd5cdba-234d-419d-90c6-38302815e395",
+      "version": [
+        0,
+        1,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "24f531e9-62ab-42c4-aee4-81735045a9a9",
+      "version": [
+        0,
+        1,
+        0
+      ]
+    }
+  ]
+}

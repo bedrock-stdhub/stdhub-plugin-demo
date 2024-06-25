@@ -1,0 +1,54 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "demo-BP",
+    "description": "A demo plugin.",
+    "uuid": "24f531e9-62ab-42c4-aee4-81735045a9a9",
+    "version": [
+      0,
+      1,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Script resources",
+      "language": "javascript",
+      "type": "script",
+      "uuid": "b6a5a2ca-96df-4b6e-8585-251c09509dc6",
+      "version": [
+        0,
+        1,
+        0
+      ],
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.11.0"
+    },
+    {
+      "module_name": "@minecraft/server-net",
+      "version": "1.0.0-beta"
+    },
+    {
+      "module_name": "@minecraft/server-admin",
+      "version": "1.0.0-beta"
+    },
+    {
+      "uuid": "85ce3b42-056f-4e7c-9345-e74256825a70",
+      "version": [
+        0,
+        1,
+        0
+      ]
+    }
+  ]
+}

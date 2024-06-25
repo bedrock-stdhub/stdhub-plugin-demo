@@ -1,8 +1,8 @@
 {
-  "name": "stdhub-plugin-template",
+  "name": "demo",
   "version": "0.1.0",
-  "productName": "stdhub-plugin-template",
-  "description": "A bedrock-stdhub plugin starter project.",
+  "productName": "demo",
+  "description": "A demo plugin.",
   "private": true,
   "devDependencies": {
     "@minecraft/core-build-tasks": "^1.1.3",

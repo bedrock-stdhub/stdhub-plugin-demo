@@ -1,13 +1,7 @@
-# stdhub-plugin-template
+# stdhub-plugin-demo
 
-A `bedrock-stdhub` plugin starter project.
+A demo plugin using API v0.1.0.
 
 # Usage
 
-Generate a new Git repository from this template, and then execute:
-```shell
-npx stdhub-cli init
-```
-and answer some questions.
-
-After initializing, run `npm install` (or other package managers, `yarn` recommended) and start coding.
+Download the released file `.mcaddon` (or build it yourself using `npm run mcaddon`), and copy that into `plugins` folder.

@@ -33,15 +33,15 @@ export async function stdApiDemo() {
   console.log(subConfigText);
 
   console.log('Write data:');
-  await api.writeData('foo.json', { key: 'val' });
+  await api.writeData('foo/bar.json', { key: 'val' });
   console.log('Data is successfully written.');
 
   console.log('Read data:');
-  const data = await api.readData('foo.json');
+  const data = await api.readData('foo/bar.json');
   console.log(JSON.stringify(data));
 
   console.log('Delete data:');
-  await api.deleteData('foo.json');
+  await api.deleteData('foo/bar.json');
   console.log('Now read it again. An error will be thrown:');
-  await api.readData('foo.json');
+  await api.readData('foo/bar.json');
 }

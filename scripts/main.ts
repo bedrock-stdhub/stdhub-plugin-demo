@@ -1,7 +1,7 @@
 import { StdhubPluginApi } from 'stdhub-plugin-api';
-import { stdApiDemo } from "./demo";
+import { stdhubApiDemo } from "./stdhub-api-demo";
 
 export const pluginName = 'demo';
 export const api = new StdhubPluginApi(pluginName);
 
-stdApiDemo();
+stdhubApiDemo();

@@ -6,13 +6,13 @@
     "uuid": "24f531e9-62ab-42c4-aee4-81735045a9a9",
     "version": [
       0,
-      1,
+      2,
       0
     ],
     "min_engine_version": [
       1,
       21,
-      0
+      1
     ]
   },
   "modules": [
@@ -23,7 +23,7 @@
       "uuid": "b6a5a2ca-96df-4b6e-8585-251c09509dc6",
       "version": [
         0,
-        1,
+        2,
         0
       ],
       "entry": "scripts/main.js"
@@ -32,7 +32,7 @@
   "dependencies": [
     {
       "module_name": "@minecraft/server",
-      "version": "1.11.0"
+      "version": "1.12.0-beta"
     },
     {
       "module_name": "@minecraft/server-net",

@@ -1,6 +1,6 @@
 # stdhub-plugin-demo
 
-A demo plugin using API v0.1.0.
+A demo plugin using API v0.2.3.
 
 # Usage
 

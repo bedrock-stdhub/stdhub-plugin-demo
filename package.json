@@ -1,6 +1,6 @@
 {
   "name": "demo",
-  "version": "0.2.0",
+  "version": "0.2.3",
   "productName": "demo",
   "description": "A demo plugin.",
   "private": true,

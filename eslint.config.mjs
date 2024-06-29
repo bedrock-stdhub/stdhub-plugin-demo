@@ -15,6 +15,10 @@ export default [
     },
     rules: {
       "minecraft-linting/avoid-unnecessary-command": "error",
+      semi: 'error',
+      quotes: [ 'error', 'single' ],
+      'array-bracket-spacing': [ 'error', 'always' ],
+      'object-curly-spacing': [ 'error', 'always' ],
     },
   },
 ];

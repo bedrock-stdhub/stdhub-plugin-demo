@@ -1,4 +1,4 @@
-import { api, pluginName } from "./main";
+import { api, pluginName } from './main';
 
 /**
  * This function contains a full demo of APIs of `v0.1.0`.

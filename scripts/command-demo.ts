@@ -42,3 +42,9 @@ export function commandDemo() {
 
   api.registerCommand('test', testCmd);
 }
+
+// Some possible commands that match the patterns:
+// .test push up 114 true
+// .test pull down 514 SomeMessage
+// .test pull down 1919 "You can use spaces in your message"
+// .test pull down 810 "You can even use \" and \\ in your message"

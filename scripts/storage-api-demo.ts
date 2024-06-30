@@ -3,7 +3,7 @@ import { api, pluginName } from './main';
 /**
  * This function contains a full demo of APIs of `v0.1.0`.
  */
-export async function stdhubApiDemo() {
+export async function storageApiDemo() {
   console.log('Read allowlist.json:');
   const allowlist = await api.readFileAsText('allowlist.json');
   console.log(allowlist);

@@ -1,47 +1,58 @@
 import { api, pluginName } from './main';
+import { Command } from 'stdhub-plugin-api';
+import { system } from '@minecraft/server';
+
+export async function storageApiDemo() {
+  const storageCmd = new Command()
+    .addHandler([] as const, () => {
+      system.run(() => testStorageApi());
+    });
+  await api.registerCommand('storage', storageCmd);
+  await api.log('§aType §e.storage§a to test the storage API.');
+}
 
 /**
- * This function contains a full demo of APIs of `v0.1.0`.
+ * This function contains a full demo of APIs since `v0.1.0`.
  */
-export async function storageApiDemo() {
-  console.log('Read allowlist.json:');
+async function testStorageApi() {
+  await api.log('§aRead allowlist.json:');
   const allowlist = await api.readFileAsText('allowlist.json');
-  console.log(allowlist);
+  await api.log(`§e${allowlist}`);
 
-  console.log('Read allowlist.json as bytes:');
+  await api.log('§aRead allowlist.json as bytes:');
   const allowlistBytes = await api.readFileAsBytes('allowlist.json');
-  console.log(allowlistBytes);
+  await api.log(`§e[${allowlistBytes.join(',')}]`);
 
-  console.log('Read config with defaults:');
+  await api.log('§aRead config with defaults:');
   const config = await api.readRootConfig({
     foo: 'bar'
   });
-  console.log(JSON.stringify(config));
+  await api.log(`§e${JSON.stringify(config)}`);
 
-  console.log('The written config file:');
+  await api.log('§aThe written config file:');
   const configText = await api.readFileAsText(`plugins/${pluginName}/config.yaml`);
-  console.log(configText);
+  await api.log(`§e${configText}`);
 
-  console.log('Read sub config file with defaults:');
+  await api.log('§aRead sub config file with defaults:');
   const subConfig = await api.readSubConfig('sub', {
     foo: 'bar'
   });
-  console.log(JSON.stringify(subConfig));
+  await api.log(`§e${JSON.stringify(subConfig)}`);
 
-  console.log('The written sub config file:');
+  await api.log('§aThe written sub config file:');
   const subConfigText = await api.readFileAsText(`plugins/${pluginName}/config.yaml`);
-  console.log(subConfigText);
+  await api.log(`§e${subConfigText}`);
 
-  console.log('Write data:');
+  await api.log('§aWrite data:');
   await api.writeData('foo/bar.json', { key: 'val' });
-  console.log('Data is successfully written.');
+  await api.log('§eData is successfully written.');
 
-  console.log('Read data:');
+  await api.log('§aRead data:');
   const data = await api.readData('foo/bar.json');
-  console.log(JSON.stringify(data));
+  await api.log(`§e${JSON.stringify(data)}`);
 
-  console.log('Delete data:');
+  await api.log('§aDelete data:');
   await api.deleteData('foo/bar.json');
-  console.log('Now read it again. An error will be thrown:');
+  await api.log('§aNow read it again. An§a error§a will be thrown:');
   await api.readData('foo/bar.json');
 }

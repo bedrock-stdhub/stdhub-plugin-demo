@@ -1,6 +1,6 @@
 {
   "name": "demo",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "productName": "demo",
   "description": "A demo plugin.",
   "private": true,
@@ -30,6 +30,6 @@
     "@minecraft/server": "1.12.0-beta.1.21.1-stable",
     "@minecraft/server-ui": "^1.1.0",
     "@minecraft/vanilla-data": "1.21.1",
-    "stdhub-plugin-api": "^0.2.4"
+    "stdhub-plugin-api": "^0.3.0"
   }
 }
